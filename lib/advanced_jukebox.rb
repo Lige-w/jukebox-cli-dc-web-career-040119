@@ -44,9 +44,7 @@ def play(my_songs)
   selected = gets.chomp
 
   if my_songs.include?(selected)
-    my_songs.each do |song|
-      if song == selected
-        puts "Playing #{song}"
+        puts "Playing #{selected}"
         system start my_songs[selected]
       end
     end
@@ -63,7 +61,7 @@ end
 
 def run(my_songs)
   #this method is the same as in jukebox.rb
-  help
+  helpli
 
   puts "Please enter a command:"
   command = gets.chomp
