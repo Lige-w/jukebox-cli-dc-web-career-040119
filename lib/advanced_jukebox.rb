@@ -45,7 +45,7 @@ def play(my_songs)
 
   if my_songs.include?(selected)
         puts "Playing #{selected}"
-        system start my_songs[selected]
+        system "start #{my_songs[selected]}"
   else
     puts "Invalid input, please try again"
   end
