@@ -59,7 +59,7 @@ end
 
 def run(my_songs)
   #this method is the same as in jukebox.rb
-  helpli
+  help
 
   puts "Please enter a command:"
   command = gets.chomp
